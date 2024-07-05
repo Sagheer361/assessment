@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import axios from 'axios';
 import DepartmentAccordion from './DepartmentAccordion';
 import './s1';
@@ -43,7 +43,7 @@ const DataDisplay: React.FC = () => {
       });
   }, []);
 
-  const columns: GridColDef[] = [
+  const columns = [
     { field: 'userId', headerName: 'User ID', width: 150 },
     { field: 'id', headerName: 'ID', width: 150 },
     { field: 'title', headerName: 'Title', width: 300 },
